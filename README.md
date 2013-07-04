@@ -1,8 +1,8 @@
 Using HTML5, CSS3 and JavaScript with only KnockoutJS and RequireJS libraries create the following user interface using a test driven development approach.
  
+![](https://raw.github.com/glister/KnockoutJSTest/master/UI.png)
 
-•	The view model should have a constructor that accepts a single parameter which will provide a JSON string of the initial data, of the following format
-“[{“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”30.50”}]”
+•	The view model should have a constructor that accepts a single parameter which will provide a JSON string of the initial data, of the following format *“[{“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”20”}, {“name”:”Item”,”value”:”30.50”}]”*
 
 •	Clicking “Add +” should add a new row with label “Item (n+1)” and a value of 0.
 

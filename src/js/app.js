@@ -15,8 +15,8 @@
 		 'summary'],
 		function (ko, $, summaryVM) {
 
-			var testData = [{'name':'Item','value':'20'}, {'name':'Item','value':'20'}, {'name':'Item','value':'20'}, {'name':'Item','value':'20'}, {'name':'Item','value':'30.50'}],
-				summaryModule = new summaryVM(testData);
+			var testData = '[{"name":"Item","value":"20"}, {"name":"Item","value":"20"}, {"name":"Item","value":"20"}, {"name":"Item","value":"20"}, {"name":"Item","value":"30.50"}]',
+				summaryModule = new summaryVM(JSON.parse(testData));
 
 			ko.bindingHandlers.animateUpdate = {
 				update: function(element, valueAccessor) {

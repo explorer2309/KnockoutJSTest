@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>KnockoutJS Test</title>
-    <link rel="stylesheet" href="css/screen.css" />
+	<meta charset="utf-8" />
+	<title>KnockoutJS Test</title>
+	<link rel="stylesheet" href="css/screen.css" />
 </head>
 <body>
 	<section id='test-section'>
 		<h1>Summary</h1>
+		<ul data-bind="foreach: list">
+			<li>
+				<label>
+					<div class="name" data-bind="text: name"></div>
+					<div class="value">
+						<span class="currency">&pound;</span>
+						<input type="number" data-bind="value: value" />
+					</div>
+					<div>&nbsp;</div>
+				</label>
+			</li>
+        </ul>
+		<div class="sum">
+			Total: &pound; <span data-bind="animateUpdate: sum" id="sum"></span>
+		</div>
+		<div class="addItem">
+			<button data-bind="click: addItem">Add item +</button>
+		</div>
 	</section>
 	<script src='js/require.js' data-main="js/app"></script>
 </body>
